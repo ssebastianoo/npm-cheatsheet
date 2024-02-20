@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Fira Mono';
+  src: url('fonts/FiraMono-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Fira MOno';
+  src: url('fonts/FiraMono-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  src: url('fonts/FiraMono-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(39, 35, 35);
+  font-family: 'Fira Mono';
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.cheats {
+  background: linear-gradient(
+    130deg,
+    rgba(163, 163, 163, 0.5) 0%,
+    rgba(94, 98, 105, 0.7) 100%
+  );
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cheat {
+  background-color: rgb(21, 20, 20);
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cheat button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 35, 35);
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cheat button:active {
+  scale: 0.9;
+  opacity: 0.7;
+}
