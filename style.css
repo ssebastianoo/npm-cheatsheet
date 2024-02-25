@@ -27,6 +27,7 @@ body {
   background-color: #272323;
   font-family: 'Fira Mono';
   color: white;
+  overflow-y: hidden;
 }
 
 .container {
@@ -74,4 +75,54 @@ body {
 .cheat button:active {
   scale: 0.9;
   opacity: 0.7;
+}
+
+#alert {
+  z-index: 999;
+  position: absolute;
+  background: linear-gradient(
+    130deg,
+    rgba(163, 163, 163, 0.5) 0%,
+    rgba(94, 98, 105, 0.7) 100%
+  );
+  padding: 6px;
+  border-radius: 6px;
+  bottom: -55px;
+}
+
+#alert p {
+  background-color: rgb(21, 20, 20);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.487);
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .cheat p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .cheats {
+    background: none;
+  }
+
+  .cheat p {
+    font-size: 15px;
+  }
 }
